@@ -1,0 +1,122 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #2F2F2F;
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main{
+
+  
+  text-align:center;
+  
+}
+.center{
+  color:white ;
+  text-align:center;
+}
+.width40{
+  width:50%;
+}
+.button{
+  padding: 10px;
+  background-color: #F4F5FF;
+  color: #2F2F2F;
+  border-radius: 20px;
+}
+
+.indcard{width: fit-content;
+margin: 10px;
+opacity: 0.99;
+transition: 0.3s;
+}
+
+.det{
+  text-align: left;
+  color: #F4F5FF;
+}
+
+@media screen and (min-width: 600px) {
+  .cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+}
+
+
+.mainheading{
+margin:5% ;
+
+}
+
+.mainp{
+  margin:5% ;
+
+  }
+.btn-light{
+  background-color: #FECE33 !important ;
+  border: #FECE33 !important;
+  margin: 5%;
+}
+
+.blue{
+  color: #394CFE;
+}
+
+.back{
+  background-color: #2F2F2F;
+}
+.left{
+  text-align: left;
+  background-color: #2F2F2F;
+  color: #F4F5FF;
+
+}
+
+.right{
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: #2F2F2F;
+  padding: 0;
+  margin:0;
+}
+
+.Page li{
+  
+ padding:10px;
+  font-size: 3vw;
+  list-style: none;
+  color: #F4F5FF;
+}
+.activ{
+  color: #394CFE !important;
+}
+.back{background-color: #2F2F2F;}
+.yellow{ color: #FECE33;}
+.indcard:hover{
+  opacity: 1 ;
+  background-color: white;
+  transform: scale(1.1);
+  
+}
+
+.indcard:hover .Name{
+  opacity: 1 ;
+  color: #394CFE;
+  transform: scale(1.1);
+}
