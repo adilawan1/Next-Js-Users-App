@@ -1,0 +1,156 @@
+$bg-color: #2f2f2f;
+$card-btn-clr: #f4f5ff;
+$yellow-clr: #fece33;
+$blue-clr: #394cfe;
+
+@mixin centralize {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin zero {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  @include zero;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $bg-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+}
+
+.activ {
+  color: $blue-clr !important;
+}
+
+.back {
+  background-color: $bg-color;
+}
+
+.blue {
+  color: $blue-clr;
+}
+
+.back {
+  background-color: $bg-color;
+}
+
+.det {
+  text-align: left;
+  color: $card-btn-clr;
+}
+
+.mainheading {
+  margin: 5%;
+}
+
+.mainp {
+  margin: 5%;
+}
+
+.yellow {
+  color: $yellow-clr;
+}
+
+.pad-5 {
+  padding: 3rem;
+}
+.ptop-5 {
+  padding-top: 3rem;
+}
+
+.btn-light {
+  background-color: $yellow-clr !important ;
+  border: $yellow-clr !important;
+  margin: 5%;
+}
+
+.left {
+  text-align: left;
+  background-color: $bg-color;
+  color: $card-btn-clr;
+}
+
+.right {
+  width: 100%;
+  display: block;
+  background-color: $bg-color;
+  @include zero;
+}
+
+.Page {
+  padding: 0;
+
+  @include centralize;
+  li {
+    padding: 10px;
+    font-size: 4vw;
+    list-style: none;
+    color: $card-btn-clr;
+  }
+}
+
+.indcard {
+  margin: 10px;
+  opacity: 0.99;
+  transition: 0.3s;
+  &:hover {
+    opacity: 1;
+    background-color: white;
+    transform: scale(1.1);
+    .Name {
+      opacity: 1;
+      color: $blue-clr;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    @include centralize;
+  }
+  .pad-5 {
+    padding: 1rem;
+  }
+  .ptop-5 {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .right {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: $bg-color;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    @include centralize;
+  }
+}

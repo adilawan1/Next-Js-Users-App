@@ -27,8 +27,8 @@ export default function Cardcall(props) {
         activeClassName={"activ"}
       />
       <div className="cards">
-        {currentPagedat.map((result) => (
-          <Cardc user={result} />
+        {currentPagedat.map((result, idx) => (
+          <Cardc key={idx} user={result} />
         ))}
       </div>
     </div>

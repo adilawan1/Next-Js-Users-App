@@ -5,6 +5,7 @@ export default function Cor() {
     <div className="right">
       <Image
         src="/5869395.jpg"
+        alt="Image"
         layout="responsive"
         width={"100%"}
         height={"100%"}

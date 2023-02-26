@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Cor from "../components/cor";
-import { loadPosts } from "../lib/Fetch";
-import styles from "../styles/Home.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -18,7 +16,7 @@ export default function Home() {
 
       <main>
         <Row className="back">
-          <Col className="left p-5">
+          <Col className="left pad-5">
             <h1 className="mainheading">
               WELCOME TO <span className="yellow">RANDOM</span>{" "}
               <span className="blue">USER</span> GENERATOR!
@@ -34,7 +32,7 @@ export default function Home() {
               </div>
             </Link>
           </Col>
-          <Col xs={7}>
+          <Col xs={5} md={7}>
             <Cor />
           </Col>
         </Row>

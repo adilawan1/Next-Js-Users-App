@@ -1,8 +1,8 @@
-import "../styles/globals.css";
+//import "../styles/globals.css";
+import "../styles/global.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
